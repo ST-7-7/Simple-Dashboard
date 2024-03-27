@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- import boxicons  -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="./style.css">
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- Section 1: Sidebar -->
+  <!-- This contains three parts of bars, one includs dashboart/ mystore/ analytics/ messages/ team/, 
+   one includes settings/ logout, and the last one includes icon/ Web name -->
+  <section id="sidebar">
+    <a href="#" class="brand">
+      <i class='bx bx-home-smile' ></i>
+      <span class="text">EasyCheck</span>
+    </a>
+
+    <ul class="side-menu top">
+      <li class="active">
+        <a href="#">
+          <i class='bx bxs-dashboard'></i>
+          <span class="text">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-store' ></i>
+          <span class="text">My Store</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-pie-chart-alt-2'></i>
+          <span class="text">Analytics</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-chat' ></i>
+          <span class="text">Message</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-user'></i>
+          <span class="text">Team</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="side-menu bottom">
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="text">Setting</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="logout">
+          <i class='bx bx-log-out' ></i>
+          <span class="text">Logout</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Content -->
+  <!-- This part should includes two main sections altogether, navbar+main content -->
+  <section id="content">
+    <nav>
+      <i class='bx bx-menu-alt-left' ></i>
+      <a href="#" class="nav-link">Categories</a>
+      <!-- input form -->
+      <form action="#">
+        <div class="form-input">
+          <input type="search" placeholder="Search">  
+          <button type="submit" class="search-btn"> 
+            <i class='bx bx-search-alt' ></i> 
+          </button>
+        </div>
+      </form>
+
+      <input type="checkbox" id="switch-mode" hidden>
+      <label for="switch-mode" class="switch-mode"></label>
+
+      <a href="#" class="notification">
+        <i class='bx bx-bell' ></i>
+        <span class="num">2</span>
+      </a>
+      <a href="#" class="profile">
+        <img src="./images/hooty.jpg">
+      </a>
+    </nav>
+
+    <main>
+      <!-- The content can be divided into 4 parts: header/ function button/ order/ to-do list -->
+
+      <!-- header -->
+      <div class="head-title">
+        <div class="left">
+          <h1>Dashboard</h1>
+          <ul class="breadcrumb">
+            <li>
+              <a href="#">Dashboard</a>
+            </li>
+            <li><i class='bx bx-chevron-right' ></i></li>
+            <li>
+              <a href="#" class="active">Home</a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#" class="btn-download">
+          <i class='bx bx-download'></i>
+          <!-- <span class="text"></span> -->
+        </a>
+      </div>
+
+      <!-- function button -->
+      <ul class="box-info">
+        <li>
+          <i class='bx bx-notepad' ></i>
+          <span class="text">
+            <h3>New Order</h3>
+            <p>76</p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bxs-user-plus' ></i>
+          <span class="text">
+            <h3>Visitors</h3>
+            <p>210</p>
+          </span>
+        </li>
+        <li>
+          <i class='bx bx-money-withdraw' ></i>
+          <span class="text">
+            <h3>Total Sales</h3>
+            <p>860</p>
+          </span>
+        </li>
+      </ul>
+
+      <!-- order + to do list -->
+      <div class="table-data">
+        <!-- order -->
+        <div class="order">
+          <div class="head">
+            <h3>Recent Order</h3>
+            <i class='bx bx-search' ></i>
+            <i class='bx bx-chevron-down' ></i>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Date of Order</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- user 1 -->
+              <tr>
+                <td>
+                  <img src="./images/hooty.jpg">
+                  <p>Hooty</p>
+                </td>
+                <td>10/01/2024</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+              <!-- user 2 -->
+              <tr>
+                <td>
+                  <img src="./images/hooty.jpg">
+                  <p>Hooty</p>
+                </td>
+                <td>10/02/2024</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+              <!-- user 3 -->
+              <tr>
+                <td>
+                  <img src="./images/hooty.jpg">
+                  <p>Hooty</p>
+                </td>
+                <td>18/02/2024</td>
+                <td><span class="status process">Process</span></td>
+              </tr>
+              <!-- user 4 -->
+              <tr>
+                <td>
+                  <img src="./images/hooty.jpg">
+                  <p>Hooty</p>
+                </td>
+                <td>28/02/2024</td>
+                <td><span class="status process">Process</span></td>
+              </tr>
+              <!-- user 5 -->
+              <tr>
+                <td>
+                  <img src="./images/hooty.jpg">
+                  <p>Hooty</p>
+                </td>
+                <td>10/03/2024</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+              <!-- user 6 -->
+              <tr>
+                <td>
+                  <img src="./images/hooty.jpg">
+                  <p>Hooty</p>
+                </td>
+                <td>12/03/2024</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+
+            </tbody>  
+          </table>
+        </div>
+
+      <!-- to do list -->
+        <div class="todo">
+          <div class="head">
+            <h3>Todos</h3>
+            <i class='bx bx-plus' ></i>
+            <i class='bx bx-chevron-down' ></i>
+          </div>
+
+          <ul class="todo-list">
+            <li class="completed">
+              <p>Presentation content</p>
+              <i class='bx bx-dots-vertical-rounded' ></i>
+            </li>
+            <li class="completed">
+              <p>Slides</p>
+              <i class='bx bx-dots-vertical-rounded' ></i>
+            </li>
+            <li class="completed">
+              <p>Record video</p>
+              <i class='bx bx-dots-vertical-rounded' ></i>
+            </li>
+            <li class="not-completed">
+              <p>Submit video</p>
+              <i class='bx bx-dots-vertical-rounded' ></i>
+            </li>
+            <li class="not-completed">
+              <p>Write email</p>
+              <i class='bx bx-dots-vertical-rounded' ></i>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+  </section>
+
+
+
+  <script src="./index.js"></script>
+</body>
+</html>
